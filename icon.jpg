@@ -1,0 +1,50 @@
+// Shared UI logic: login state, SweetAlert, Meet/Calendar buttons
+async function apiMe(){
+  try { const r = await fetch('../api/auth.php?action=me',{credentials:'include'}); return await r.json(); }
+  catch(e){ return {ok:false}; }
+}
+
+document.addEventListener('DOMContentLoaded', async ()=>{
+  const loginBtn = document.getElementById('btnLoginTop');
+  const eventsBtn = document.getElementById('btnEventsTop');
+  const calendarBtn = document.getElementById('btnCalendarTop');
+  const meetBtn = document.getElementById('btnMeetTop');
+
+  if (eventsBtn) eventsBtn.addEventListener('click', ()=> location.href='events.php');
+  if (calendarBtn) calendarBtn.addEventListener('click', ()=> location.href='room.php');
+
+  // Meet button opens modal on index.php
+  if (meetBtn) meetBtn.addEventListener('click', ()=>{
+    const modalEl = document.getElementById('meetModal');
+    if (modalEl) new bootstrap.Modal(modalEl).show();
+  });
+
+  // login state
+  let me = null;
+  const m = await apiMe();
+  if (m.ok && m.user) {
+    me = m.user;
+    if (loginBtn) {
+      loginBtn.classList.add('btn-login-logged');
+      loginBtn.innerHTML = `<i class="bi bi-person-check me-1"></i>${me.name || 'Account'}`;
+    }
+  }
+  if (loginBtn) {
+    loginBtn.addEventListener('click', async ()=>{
+      if (!me) { location.href = 'login.php'; return; }
+      const out = await Swal.fire({
+        icon: 'question',
+        title: 'Logout?',
+        text: 'Do you want to log out?',
+        showCancelButton: true, confirmButtonText: 'Logout', cancelButtonText: 'Cancel'
+      });
+      if (out.isConfirmed){
+        const fd = new FormData(); fd.append('action','logout');
+        const r = await fetch('../api/auth.php',{method:'POST', body:fd, credentials:'include'});
+        const j = await r.json();
+        if (j.ok){ await Swal.fire({icon:'success', title:'Logged out', timer:1200, showConfirmButton:false}); location.href='login.php'; }
+        else Swal.fire({icon:'error', title:'Logout failed'});
+      }
+    });
+  }
+});
