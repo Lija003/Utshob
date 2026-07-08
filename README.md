@@ -2,7 +2,7 @@
 ![banner](https://capsule-render.vercel.app/api?type=waving&height=250&color=0:664700,100:d7ad00&text=UTSHOB&fontSize=72&fontAlign=50&fontAlignY=40&animation=fadeIn&desc=Host.%20Discover.%20Book.%20Celebrate.&descAlignY=60)
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=23&duration=3000&color=593e006&center=true&vCenter=true&width=900&lines=Premium+Event+Management+Platform;Room+Booking+and+Event+Registration+System;Built+for+University+Events+Venues+and+Communities" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=23&duration=3000&color=FFD166&center=true&vCenter=true&width=900&lines=Premium+Event+Management+Platform;Room+Booking+and+Event+Registration+System;Built+for+University+Events+Venues+and+Communities" alt="Typing SVG" />
 </p>
 
 ---
