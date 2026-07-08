@@ -1,5 +1,5 @@
 # Utshob
-![banner](https://capsule-render.vercel.app/api?type=waving&height=250&color=0:FFD166,100:8A6F00&text=UTSHOB&fontSize=72&fontAlign=50&fontAlignY=40&animation=fadeIn&desc=Host.%20Discover.%20Book.%20Celebrate.&descAlignY=60)
+![banner](https://capsule-render.vercel.app/api?type=waving&height=250&color=0:664700,100:8A6F00&text=UTSHOB&fontSize=72&fontAlign=50&fontAlignY=40&animation=fadeIn&desc=Host.%20Discover.%20Book.%20Celebrate.&descAlignY=60)
 
 <p align="center">
   <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=23&duration=3000&color=FFD166&center=true&vCenter=true&width=900&lines=Premium+Event+Management+Platform;Room+Booking+and+Event+Registration+System;Built+for+University+Events+Venues+and+Communities" alt="Typing SVG" />
@@ -754,32 +754,12 @@ See the `LICENSE` file for more information.
 
 # 👨‍💻 Author
 
-**NEXZEN Studios**
+Lija Moni
 
-Event Management System Developer  
-Full-Stack PHP Project  
-UI/UX and Database Integration
+Frontend Developer
+Crafting beautiful UI/UX
 
-### Contact
-
-* GitHub: [your-github-username](https://github.com/your-github-username)
-* LinkedIn: [your-linkedin-profile](https://www.linkedin.com/)
-* Email: `your-email@example.com`
-
-> Update the author and contact information before publishing the repository.
-
----
-
-# ⭐ Support the Project
-
-If you find UTSHOB useful:
-
-* Give the repository a star
-* Share the project
-* Report bugs
-* Suggest new features
-* Improve the UI
-* Contribute to the codebase
+GitHub: @lija003
 
 <p align="center">
   <strong>UTSHOB</strong>
